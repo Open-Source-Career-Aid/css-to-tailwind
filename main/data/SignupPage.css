@@ -1,0 +1,12 @@
+/* SignupPage.css */
+@import 'tailwindcss/base';
+@import 'tailwindcss/components';
+@import 'tailwindcss/utilities';
+
+.signup-container {
+    /* Add your Tailwind and custom styles here */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}

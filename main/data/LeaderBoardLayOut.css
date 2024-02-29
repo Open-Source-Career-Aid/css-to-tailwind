@@ -1,0 +1,403 @@
+/* CSS */
+
+/* Declare global variables */
+:root {
+    --dark: #17213F;
+    --light: #FFFFFF;
+    --darkMode: rgba(255, 255, 255, .1);
+    --lightMode: rgba(123, 123, 123, .1);
+    --week: #703C8F;
+    --today: #2B4690;
+    --streak:#DE8958;
+    --bar: #ABB0C2;
+    --header: #F86E42;
+    --msgDark: #39466E;
+    --msgLight: #ECEEF3;
+    --signUpLight: #4C7BFE;
+    --signUpDark: #769AFE;
+    --playerLight:#D8DBE6;
+    --playerDark: #39466E;
+    --playerColorLight: #4C7BFE;
+    --playerColorDark: #769AFE;
+    /* --signUpDark: #4C7BFE; */
+
+
+
+}
+div#LeaderBoardNav{
+    width: 100%;
+    height: 20%;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+    z-index: 99999;
+}
+
+div#LeaderBoardBody{
+    width: 100%;
+    height: 80%;
+    /* border-radius: 13% 13% 0px 0px; */
+    overflow: hidden;
+    display: flex;
+    flex-flow: column nowrap;
+    font-size: .5em;
+    /* color: #FFFFFF;     */
+}
+h1#title {
+    color: #4C7BFE;
+    font-size: .55em;
+    height: 40%;
+    padding: 1em;
+    width: fit-content;
+    overflow-y: hidden;
+    font-weight: bold;
+}
+a.mode{
+    font-size: .3em;
+    border-radius: 15px;
+    /* background-color: rgba(123, 123, 123, .1); */
+    width: fit-content;
+    margin: 0 .5em 0 .5em;
+    padding: .5em 1em;
+    height: 35%;
+    overflow: hidden;
+    color: #8CA8FF;
+    font-weight: 600;
+    text-decoration: none;
+}
+
+a.mode.light {
+    opacity: 100%;
+    color: #000000;
+    font-weight: bolder;
+}
+
+a.mode.dark{
+    opacity: 100%;
+    color: #FFFFFF;
+    font-weight: bolder;
+}
+
+a.mode:hover{
+    text-decoration: none;
+    cursor: pointer;
+}
+nav#LeaderBoardMenu{
+    height: 60%;
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-evenly;
+    width: 100%;
+}
+
+.Leadericons {
+    font-size: .5em;
+    padding: 0;
+    transform: scale(1);
+    margin: 0;
+}
+
+#playerRank path, #collegeRank path {
+    fill: #4C7BFE;
+}
+
+section#university, section#DQ, section#rank {
+    font-size: .4em;
+    text-align: center;
+    margin: auto 0;
+    font-weight: bold;
+  }
+
+  div#contentHeader, div.contentBody {
+    display: flex;
+    justify-content: space-between;
+    /* align-content: flex-end; */
+    border-bottom: thin solid var(--bar);
+    padding: .5em .2em;
+  }
+
+div#contentHeader {
+    height: 10%;
+    font-size: 1.5em;
+    color: var(--header);
+    /* padding: .5em 0; */
+    /* width: 100%; */
+}
+
+div.contentBody[data-mode="light"] {
+    background-color: var(--light);
+    /* border-radius: 40px;
+    width: 75%;
+    height: 15%;
+    margin: .2em auto; */
+}
+div.contentBody[data-mode="dark"] {
+    background-color: var(--dark);
+
+}
+article.leaderCard  {
+    font-size: .5em;
+    /* color: hsl(0, 0%, 0%); */
+    font-weight: 700;
+}
+article.leaderCard.rank, article.leaderCard.dq {
+    align-self: center;
+    /* justify-content: flex-end; */
+}
+article.leaderCard.university {
+    width: 85%;
+    align-self: center;
+    padding: .5em 0;
+}
+article.leaderCard.rank{
+    width: 10%;
+    height: 200%;
+}
+
+article.leaderCard.dq{
+    width: 5%;
+    /* font-size: .35em; */
+}
+article.university, article.rank, article.dq {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+article.rank {
+    justify-content: flex-end;
+}
+article.university > img.LeaderIcons {
+    width: 15%;
+    /* height: 40%; */
+    padding: .1em;
+}
+article.university > span.LeaderLabel {
+    margin: 0;
+    font-size: .7em;
+    padding: 0 .2em;
+    width: 60%;
+}
+
+div.dark {
+    background-color: #17213F;
+}
+
+div.light {
+    background-color: #FFFFFF;
+}
+
+a.darkMode {
+    background-color: rgba(255, 255, 255, .1);
+}
+a.lightMode {
+    background-color: rgba(123, 123, 123, .1);
+}
+
+/* background image an svg */
+article.first {
+    background-image: url(../SVGasComponents/Crown.svg);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+article.second {
+    background-image: url(../SVGasComponents/Silver.svg);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+article.third {
+    background-image: url(../SVGasComponents/Bronze.svg);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+
+article.rank {
+    font-size: .4em;
+}
+article.rank sup {
+    font-size: .4em;
+    padding: .1em 0;
+    font-weight: bold;
+    width: 50%;
+}
+article.rank {
+    height: 100%;
+}
+
+/* div#LeaderBoardBody[data-bg="today"] {
+    background-color: var(--today);
+}
+div#LeaderBoardBody[data-bg="week"]  {
+    background-color: var(--week);
+}
+div#LeaderBoardBody[data-bg="allTime"]  {
+    background-color: var(--streak);
+} */
+div.contentBody[data-mode="light"] {
+    background-color: var(--light);
+}
+div.contentBody[data-mode="dark"] {
+    background-color: var(--dark);
+}
+.contentBody.currentPlayer {
+    order: 1;
+}
+
+.contentBody.currentPlayer[data-mode="light"] {
+    background-color: var(--playerLight);
+    color: var(--playerColorLight);
+}
+
+.contentBody.currentPlayer[data-mode="dark"] {
+    background-color: var(--playerDark);
+    color: var(--playerColorDark);
+}
+div.contentBody {
+    width:fit-content;
+    overflow: hidden;
+    /* height: 15%; */
+}
+
+a.active{
+    opacity: 1;
+}
+a.inactive{
+    opacity: .5;
+}
+
+#toggleBtn {
+    display: flex;
+}
+div#LeaderBoardNav, div#LeaderBoardBody {
+    padding: 0;
+}
+
+/* #topMargin{
+    border: thin solid var(--bar);
+} */
+
+/* div.signup-overlay {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: .25rem;
+    padding: 0;
+    height: 20%;
+    z-index: -1;
+}  */
+
+div#para-btn {
+    width: 70%;
+    font-size: 1em;
+    line-height: 1.5em;
+}
+
+aside#btn-container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50%;
+    margin: 0;
+    padding: 0px;
+}
+
+button.sign-btn  {
+    border: thin solid var(--bar);
+    border-radius: 15px;
+    text-align: center;
+    padding: 1em;
+    text-align: center;
+    font-size: .5em;
+    font-weight: bolder;
+    width: 80%;
+    height: 20%;
+}
+
+.msgdark {
+    background-color: var(--msgDark);
+    color: var(--light);
+}
+
+.msglight {
+    background-color: var(--msgLight);
+    color: var(--dark);
+}
+p.btn-para, a.btn-para{
+    font-size: 1.5em;
+    line-height: 1.5em;
+    font-weight: bold;
+    width: 65%;
+    text-align: center;
+    align-self: center;
+    height: 25%;
+}
+
+a.btn-para {
+    text-decoration: underline;
+    padding-top: 0;
+    padding-bottom: .5em;
+}
+
+a.btn-para[data-mode="light"] {
+    color: var(--light);
+}
+
+a.btn-para[data-mode="dark"] {
+    color: var(--dark);
+}
+
+.contentBody[data-mode= "light"] {
+    background-color: var(--light);
+    color: var(--dark);
+}
+
+.contentBody[data-mode= "dark"] {
+    background-color: var(--dark);
+    color: var(--light);
+} 
+
+div.signup-overlay {
+    display: flex;
+    position: fixed;
+    flex-flow: column nowrap;
+    bottom: 0;
+    padding: 0;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    width: 100%;
+    height: 20%;
+    font-size: .25rem;
+    z-index: 1000; /* Make sure it's above other elements if needed */
+  }
+  
+  .close-msg-overlay {
+    font-size: 30px;
+    cursor: pointer;
+    margin-left: auto;
+    height: 30%;
+    overflow-y: hidden;
+  }
+
+button.yes[data-mode="light"] {
+    background-color: var(--signUpLight);
+  }
+.yes[data-mode="dark"] {
+        background-color: var(--signUpDark);
+    }
+
+.contentBody.currentPlayer{
+    position: fixed;
+    bottom: 10px;
+    width: 95%;
+    height: 5%;
+    border-radius: 25px;
+    margin: auto;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+
+

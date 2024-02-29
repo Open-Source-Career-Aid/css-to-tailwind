@@ -1,0 +1,44 @@
+.emoji-container {
+  position: fixed;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  overflow: hidden;
+  z-index: 1000;
+  margin: 0;
+  padding: 0;
+}
+
+.emoji {
+  position: absolute;
+  top: 0;
+  font-size: 5rem;
+  animation: robotFace 4s ease-in-out;
+}
+
+@keyframes robotFace {
+  0% {
+    transform: translate(0, -25vh);
+  }
+  25% {
+    transform: translate(-5px, 25vh) rotate(-5deg);
+  }
+
+
+  50% {
+    transform: translate(5px, 50vh) rotate(5deg);
+  }
+
+  75% {
+    transform: translate(-5px, 75vh) rotate(-5deg);
+  }
+
+  100% {
+    transform: translate(0, 150vh) rotate(0deg);
+  }
+}

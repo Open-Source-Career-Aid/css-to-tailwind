@@ -1,0 +1,83 @@
+.explanation-content {
+    height: 500px;
+    width: 400px;
+    border-radius: 5px;
+    border-top-left-radius: 5px;
+    overflow: hidden;
+    padding: 0px;
+    background-color: white;
+    padding: 0 20px;
+    padding-top: 20px;
+}
+.explanation-content[data-theme="dark"] {
+    background-color: var(--dark-mode-bg)
+}
+
+.closeOverlay.explanationoverlay {
+    color: black;
+}
+
+.closeOverlay.explanationoverlay[data-theme="dark"] {
+    color: white;
+}
+
+.explanation-content-body {
+    height: 80%;
+    display: flex;
+    padding: 0;
+    align-items: flex-start;
+    justify-items: flex-start;
+    overflow: scroll;
+    border: 1px solid #c7c7c7;
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+.explanation-text {
+  width: 100%;
+  display: flex;
+  align-content: flex-start;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-items: flex-start;
+  flex-wrap: wrap;
+  position: static;
+  padding: 10px;
+}
+
+.explanation-text-p {
+  display: flex;
+  font-size: 14px;
+}
+.explanation-text-p[data-theme="dark"] {
+  color: var(--dark-mode-text);
+}
+
+.warning {
+    font-size: 15px;
+    font-weight: 500;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0 10px;
+}
+.warning[data-theme="dark"] {
+    color: var(--dark-mode-text);
+}
+
+.countdown-timer {
+    padding: 0;
+    padding-left: 10px;
+    font-weight: 700;
+    color: #4c7bfe;
+}
+
+.explanation-content-header {
+    height: 15%;
+    padding-left: 20px;
+    padding-right: 20px;
+    justify-items: flex-start;
+    align-content: center;
+    display: flex;
+    padding: 0;
+}

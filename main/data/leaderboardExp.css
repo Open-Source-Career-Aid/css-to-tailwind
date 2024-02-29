@@ -1,0 +1,100 @@
+.infocontainer {
+  position: relative;
+  width: 100%;
+  height: 35%;
+  background-color: #4C7BFE; /* Background color */
+  border-radius: 0px 0 45% 45%;
+  overflow: hidden;
+}
+
+.collegeText{
+  color: #fff;
+  margin-bottom: 2px;
+  font-size: 2.5em;
+}
+.content {
+  position: relative;
+  z-index: 1;
+  text-align: center;
+  width: fit-content;
+  font-size: .25em;
+  height: 90%;
+  padding-right: 30px;
+}
+
+.lastFour{
+  position: relative;
+  z-index: 1;
+  overflow: hidden;
+  margin-top: 20px;
+  height: 65%;
+  
+  /* Add your content styling here */
+}
+
+.collegeCards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  margin-bottom: 2px; /* Adjust the spacing between rows */
+  /* height: 45%; */
+  width: 100%;
+  font-size: .5em;
+}
+
+.collegeCard {
+  flex: 0 0 calc(33.33% - 20px); /* Each card occupies one-third of the container with spacing */
+  max-width: calc(33.33% - 20px); /* Set a maximum width for each card */
+  box-sizing: border-box;
+  text-align: center;
+  font-size: 1em;
+  /* margin-bottom: 20px; Adjust the spacing between cards */
+  padding: 10px; /* Add padding to the cards */
+  /* border: 1px solid #ccc; Add a border for separation */
+  /* Adds variable from react js index + 1 to grow flex size*/
+  /* flex-grow: var(--flex-grow, 1); */
+}
+
+.collegeImage  {
+  max-width: 100%;
+  max-height: 100px; /* Adjust the maximum image height */
+  object-fit: contain;
+  font-size: small;
+  padding: 0;
+}
+
+/* Responsive font size */
+@media screen and (max-width: 768px) {
+  .collegeCard {
+    font-size: 0.8em; /* Adjust font size for smaller screens */
+  }
+}
+
+.collegeImage {
+  font-size: .5em;
+  margin: 0;
+}
+.rank{
+  font-size: 2.5em;
+  color:#fff;
+  font-weight: bold;
+}
+
+#collegeDQ{
+  display: block;
+  color: #000;
+  font-weight: bolder;
+  font-size: 2.5em;
+  word-wrap: break-word;
+  width: 70%;
+  text-align: left;
+  margin-bottom: 5px;
+}
+#userDQ{
+  color: #fff;
+  font-size: 2.5em;
+  width: 100%;
+  text-align: left;
+  font-weight: 900;
+}
+

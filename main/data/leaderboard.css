@@ -1,0 +1,88 @@
+.navigator-container {
+    /* flex flex-row w-full p-0 */
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    padding: 0;
+}
+
+.nav-item-container {
+    /* flex flex-col justify-center items-center align-middle w-[100px] rounded-md w-full p-0 */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    align-content: middle;
+    width: 100px;
+    border-radius: 0.375rem;
+    padding: 0;
+}
+
+.nav-item {
+    /* {(item.selected ? "bg-[#8CA8FF] text-white" : "bg-transparent hover:bg-[#4C7BFE1A]") + " text-[16px] rounded-md cursor-pointer"+
+                    (theme === 'dark' ? " text-white" : "")
+                    } */
+    font-size: 16px;
+    border-radius: 0.375rem;
+    cursor: pointer;
+}
+
+.leaderboard-container {
+    /* flex flex-col justify-start items-center align-middle w-[400px] h-[600px] bg-white rounded-md p-[20px] */
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    align-content: middle;
+    width: 400px;
+    height: 600px;
+    background-color: white;
+    border-radius: 0.375rem;
+    padding: 20px;
+}
+
+.leaderboard-title {
+    /* mb-[10px] text-[20px] h-[6%] font-bold text-[#4C7BFE] */
+    margin-bottom: 10px;
+    font-size: 20px;
+    height: 6%;
+    font-weight: bold;
+    color: #4C7BFE;
+    overflow: visible;
+}
+
+.leadertable-container {
+    /* flex flex-col w-full p-0 py-2 h-[100%] justify-between items-center */
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+    padding: 0;
+    height: 100%;
+    justify-content: space-between;
+    align-items: center;
+    overflow: visible;
+}
+
+.table-row {
+    /* flex flex-col w-full px-[15px] bg-[#4C7BFE1A] rounded-md my-[5px] text-[16px] overflow-visible */
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    padding-left: 15px;
+    padding-right: 15px;
+    background-color: #4C7BFE1A;
+    border-radius: 0.375rem;
+    margin-top: 5px;
+    font-size: 16px;
+    overflow: visible;
+}
+
+.userbox-container {
+    /* flex flex-row p-0 justify-between text-[14px] pb-[5px] */
+    display: flex;
+    flex-direction: row;
+    padding: 0;
+    justify-content: space-between;
+    font-size: 14px;
+    padding-bottom: 5px;
+}
